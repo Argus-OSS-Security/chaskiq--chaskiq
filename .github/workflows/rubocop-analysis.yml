@@ -1,12 +1,13 @@
 # pulled from repo
 name: 'Rubocop'
 
-on:
-  push:
-    branches: [main, master, '!l10n_master2']
-  schedule:
-    - cron: '27 22 * * 2'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [main, master, '!l10n_master2']
+#   schedule:
+#     - cron: '27 22 * * 2'
+# 
 jobs:
   rubocop:
     runs-on: ubuntu-latest

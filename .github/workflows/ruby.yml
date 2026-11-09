@@ -1,10 +1,11 @@
 # .github/workflows/ci.yml
 
 name: CI
-on:
-  push:
-    branches_ignore:
-      - 'l10n_master2'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches_ignore:
+#       - 'l10n_master2'
 jobs:
   test:
     runs-on: ubuntu-latest

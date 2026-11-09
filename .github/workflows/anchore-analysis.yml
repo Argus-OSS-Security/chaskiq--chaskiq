@@ -1,12 +1,13 @@
 name: Container Image CI
 
-on:
-  push:
-    branches-ignore:
-      - main
-      - master
-      - l10n_master2
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches-ignore:
+#       - main
+#       - master
+#       - l10n_master2
+# 
 jobs:
   build:
     runs-on: ubuntu-latest

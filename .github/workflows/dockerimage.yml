@@ -1,14 +1,15 @@
 name: Push Docker Image
 
-on:
-  push:
-    branches:
-      - master
-      - main
-      - stage
-  release:
-    types: [published]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#       - main
+#       - stage
+#   release:
+#     types: [published]
+# 
 jobs:
   build:
     runs-on: ubuntu-latest
